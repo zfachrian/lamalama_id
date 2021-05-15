@@ -87,6 +87,23 @@
                             <li>Phone: {{$stores->store_phone}}</li>
                             <li>Email: {{$stores->store_email}}</li>
                         </ul>
+                        <!-- sosmed -->
+                        <section>
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" style="border-radius: 25%;" href="#!" role="button"
+                                ><i class="fa fa-facebook-f"></i
+                                ></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" style="border-radius: 25%;" href="#!" role="button"
+                                ><i class="fa fa-twitter"></i
+                                ></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" style="border-radius: 25%;" href="#!" role="button"
+                                ><i class="fa fa-instagram"></i
+                                ></a>
+                        </section>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1">
