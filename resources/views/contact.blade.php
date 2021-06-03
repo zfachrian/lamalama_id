@@ -24,7 +24,7 @@ Contact
 <div class="map spad">
   <div class="container">
     <div class="map-inner">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd" height="610" style="border:0" allowfullscreen="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5487296087344!2d112.74360501531348!3d-7.2920719947368875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbbbfb8ad99d%3A0x61cceaea0ac163a2!2sConecworld!5e0!3m2!1sid!2sid!4v1622718274946!5m2!1sid!2sid" height="610" style="border:0" allowfullscreen="">
       </iframe>
       <div class="icon">
         <i class="fa fa-map-marker"></i>
