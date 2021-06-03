@@ -34,7 +34,7 @@ Home
             <div class="col-lg-4">
                 <a href="{{url('/shop/category/'.$category->id)}}">
                     <div class="single-banner">
-                        <img src="{{asset('img/banner-' . $loop->iteration . '.jpg')}}" alt="">
+                        <img src="{{asset('img/static-banner/categoryBanner' . $loop->iteration . '.jpg')}}" alt="">
                         <div class="inner-text">
                             <h4>{{$category->category_name}}</h4>
                         </div>
@@ -47,12 +47,12 @@ Home
 </div>
 <!-- Banner Section End -->
 
-<!-- Women Banner Section Begin -->
+<!-- New Banner Section Begin -->
 <section class="women-banner spad">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3">
-                <div class="product-large set-bg" data-setbg="{{asset('img/products/women-large.jpg')}}">
+                <div class="product-large set-bg" data-setbg="{{asset('img/static-banner/new.jpg')}}">
                     <h2>New</h2>
                 </div>
             </div>
@@ -86,10 +86,10 @@ Home
         </div>
     </div>
 </section>
-<!-- Women Banner Section End -->
+<!-- New Banner Section End -->
 
 <!-- Deal Of The Week Section Begin-->
-<section class="deal-of-week set-bg spad" data-setbg="{{asset('img/time-bg.jpg')}}">
+<section class="deal-of-week set-bg spad" data-setbg="{{asset('img/static-banner/staticBanner.jpg')}}">
     <div class="container">
         <div class="col-lg-6 text-center">
             <div class="section-title">
@@ -102,7 +102,7 @@ Home
 </section>
 <!-- Deal Of The Week Section End -->
 
-<!-- Man Banner Section Begin -->
+<!-- Affordable Banner Section Begin -->
 <section class="man-banner spad">
     <div class="container-fluid">
         <div class="row">
@@ -134,14 +134,14 @@ Home
                 </div>
             </div>
             <div class="col-lg-3 offset-lg-1">
-                <div class="product-large set-bg m-large" data-setbg="{{asset('img/products/man-large.jpg')}}">
+                <div class="product-large set-bg m-large" data-setbg="{{asset('img/static-banner/affordable.jpg')}}">
                     <h2>Afordable</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Man Banner Section End -->
+<!-- Affordable Banner Section End -->
 
 <!-- <section class="latest-blog spad" style="padding-top: 0;">
     <div class="container-fluid" style="padding: 0 5%">
