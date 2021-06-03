@@ -46,7 +46,7 @@ Shop
                 <p style="white-space: pre-wrap;">{{$product->product_description}}</p>
               </div>
               <a href="{{'https://api.whatsapp.com/send?phone='. $stores->store_wa .'&text='.  $stores->store_text_buy .' '. $product->product_name . '%20('.$product->product_code.')'}}" class="primary-btn pd-cart" style="margin-right:10px;">Beli</a>
-              <a href="{{'https://api.whatsapp.com/send?phone='. $stores->store_wa .'&text='. $stores->store_text_buy .' '. $product->product_name . '%20('.$product->product_code.')'}}" class="primary-btn pd-cart" style="background-color: brown;">Tukar</a>
+              <a data-toggle="modal" data-target="#tukarModal" href="#" class="primary-btn pd-cart" style="background-color: brown;">Tukar</a>
             </div>
           </div>
         </div>
@@ -94,4 +94,38 @@ Shop
   </div>
 </div>
 <!-- Related Products Section End -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tukarModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="tukarModal" tabindex="-1" role="dialog" aria-labelledby="tukarModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Mohon Dibaca</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+        Tukarkan product fashion anda yang telah tak terpakai dengan product kami, pilih product dan kirimkan gambar product anda dan tim kami akan melakukan peninjauan, jika product sepadan maka proses tukar bisa dilakukan.
+        </p>
+        <br>
+        <h3><b>Info Tukar</b></h3> 
+        <p>
+        
+        Tukar barang minimal 2 item product. Klik button "Lanjut Tukar" untuk melanjutkan, proses akan dilanjutkan ke chat whatsap dan anda akan diarahkan untuk memilih produk  ke 2.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="primary-btn pd-cart" data-dismiss="modal" style="background-color: grey;">Close</a>
+        <a href="{{'https://api.whatsapp.com/send?phone='. $stores->store_wa .'&text='. $stores->store_text_trade .' '. $product->product_name . '%20('.$product->product_code.')'}}" class="primary-btn pd-cart" style="background-color: brown;">Tukar</a>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
