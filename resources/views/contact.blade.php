@@ -82,7 +82,25 @@ Contact
         </div>
       </div>
     </div>
+    <br>
+    <h3 style="text-align: center;font-weight: bold;margin-bottom: 32px;">Our Instagram</h3>
+    <div class="embedsocial-hashtag" data-ref="eeb97c338668c6eb70280a71a3d792854fdfe2c5"><a class="feed-powered-by-es" href="https://embedsocial.com/products/embedfeed/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div>
+    <script>
+        (function(d, s, id) {
+            var js;
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://embedsocial.com/cdn/ht.js";
+            d.getElementsByTagName("head")[0].appendChild(js);
+        }(document, "script", "EmbedSocialHashtagScript"));
+    </script>
   </div>
 </section>
 <!-- Contact Section End -->
+<section class="latest-blog spad" style="padding-top: 0;">
+    
+</section>
 @endsection

@@ -143,7 +143,7 @@ Home
 </section>
 <!-- Man Banner Section End -->
 
-<section class="latest-blog spad" style="padding-top: 0;">
+<!-- <section class="latest-blog spad" style="padding-top: 0;">
     <div class="container-fluid" style="padding: 0 5%">
         <h3 style="text-align: center;font-weight: bold;margin-bottom: 32px;">Our Instagram</h3>
         <div class="embedsocial-hashtag" data-ref="eeb97c338668c6eb70280a71a3d792854fdfe2c5"><a class="feed-powered-by-es" href="https://embedsocial.com/products/embedfeed/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div>
@@ -160,5 +160,5 @@ Home
             }(document, "script", "EmbedSocialHashtagScript"));
         </script>
     </div>
-</section>
+</section> -->
 @endsection
