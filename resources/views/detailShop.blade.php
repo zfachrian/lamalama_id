@@ -28,7 +28,28 @@ Shop
       <div class="col-lg">
         <div class="row">
           <div class="col-lg-6">
-            <img class="product-big-img" src="{{ asset('storage/'.$product->product_img) }}" alt="">
+            <div class="product-pic-zoom">
+              <img class="product-big-img" src="{{ asset('storage/'.$product->product_img) }}" alt="">
+              <div class="zoom-icon">
+                <i class="fa fa-search-plus"></i>
+              </div>
+            </div>
+            <div class="product-thumbs">
+              <div class="product-thumbs-track ps-slider owl-carousel">
+                <div class="pt active" data-imgbigurl="{{ asset('storage/'.$product->product_img) }}"><img src="{{ asset('storage/'.$product->product_img) }}" alt=""></div>
+                @if($product->product_img2)
+                <div class="pt" data-imgbigurl="{{ asset('storage/'.$product->product_img2) }}"><img src="{{ asset('storage/'.$product->product_img2) }}" alt=""></div>
+                @endif
+                
+                @if($product->product_img3)
+                <div class="pt" data-imgbigurl="{{ asset('storage/'.$product->product_img3) }}"><img src="{{ asset('storage/'.$product->product_img3) }}" alt=""></div>
+                @endif
+
+                @if($product->product_img4)
+                <div class="pt" data-imgbigurl="{{ asset('storage/'.$product->product_img4) }}"><img src="{{ asset('storage/'.$product->product_img4) }}" alt=""></div>
+                @endif
+              </div>
+            </div>
           </div>
           <div class="col-lg-6">
             <div class="product-details">
@@ -46,7 +67,9 @@ Shop
                 <p style="white-space: pre-wrap;">{{$product->product_description}}</p>
               </div>
               <a href="{{'https://api.whatsapp.com/send?phone='. $stores->store_wa .'&text='.  $stores->store_text_buy .' '. $product->product_name . '%20('.$product->product_code.')'}}" class="primary-btn pd-cart" style="margin-right:10px;">Beli</a>
+              @if($product->product_trade_status == 1) 
               <a data-toggle="modal" data-target="#tukarModal" href="#" class="primary-btn pd-cart" style="background-color: brown;">Tukar</a>
+              @endif
             </div>
           </div>
         </div>
@@ -95,10 +118,10 @@ Shop
 </div>
 <!-- Related Products Section End -->
 
-<!-- Button trigger modal -->
+<!-- Button trigger modal
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tukarModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="tukarModal" tabindex="-1" role="dialog" aria-labelledby="tukarModalTitle" aria-hidden="true">
@@ -112,13 +135,13 @@ Shop
       </div>
       <div class="modal-body">
         <p>
-        Tukarkan product fashion anda yang telah tak terpakai dengan product kami, pilih product dan kirimkan gambar product anda dan tim kami akan melakukan peninjauan, jika product sepadan maka proses tukar bisa dilakukan.
+          Tukarkan product fashion anda yang telah tak terpakai dengan product kami, pilih product dan kirimkan gambar product anda dan tim kami akan melakukan peninjauan, jika product sepadan maka proses tukar bisa dilakukan.
         </p>
         <br>
-        <h3><b>Info Tukar</b></h3> 
+        <h3><b>Info Tukar</b></h3>
         <p>
-        
-        Tukar barang minimal 2 item product. Klik button "Lanjut Tukar" untuk melanjutkan, proses akan dilanjutkan ke chat whatsap dan anda akan diarahkan untuk memilih produk  ke 2.
+
+          Tukar barang minimal 2 item product. Klik button "Lanjut Tukar" untuk melanjutkan, proses akan dilanjutkan ke chat whatsap dan anda akan diarahkan untuk memilih produk ke 2.
         </p>
       </div>
       <div class="modal-footer">

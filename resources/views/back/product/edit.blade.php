@@ -76,25 +76,59 @@ Edit Product
                 <textarea class="form-control" rows="3" name="description" placeholder="description product">{{$product->product_description}}</textarea>
               </div>
               <div class="form-group">
+                <label>Status Tukar</label>
+                <select class="form-control" name='trade_status'>
+                  <option value='0' @if($product->product_trade_status == 0) selected @endif>Inactive</option>
+                  <option value='1' @if($product->product_trade_status == 1) selected @endif>Active</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <label for="price">Harga Product *</label>
                 <input type="number" class="form-control" name="price" placeholder="harga product" value="{{$product->product_price}}" required>
               </div>
               <div class="form-group">
-                <label for="exampleInputFile">Foto Banner</label>
+                <label for="exampleInputFile">Thumbnail Banner</label>
                 <div class="input-group">
                   <div class="custom-file">
                     <input type="file" class="custom-file-input" name="image" id="image">
                     <label class="custom-file-label" for="image">Choose file</label>
                   </div>
                 </div>
-                <p style="font-size:12px; color:blue;">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 2</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image2" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 3</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image3" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 4</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image4" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <p style="font-size:12px; color:blue;">
                 ukurang maksimal 2mb
                 <br />
                 dengan format jpg/png
                 <br />
                 dengan ukuran 440px X 440px
-                </p>
-              </div>
+              </p>
             </div>
             <!-- /.card-body -->
 

@@ -22,6 +22,7 @@ class CreateStoresTable extends Migration
             $table->text('store_address');
             $table->text('store_about');
             $table->string('store_bank_account');
+            $table->boolean('trade_status');
             $table->timestamps();
         });
     }

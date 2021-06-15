@@ -80,7 +80,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="{{asset('img/footer-logo.png')}}" alt=""></a>
+                            <!-- <a href="#"><img src="{{asset('img/footer-logo.png')}}" alt=""></a> -->
                         </div>
                         <ul>
                             <li>Address: {{$stores->store_address}}</li>

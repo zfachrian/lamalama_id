@@ -79,21 +79,56 @@ Create Product
                 <input type="number" class="form-control" name="price" placeholder="harga product" required>
               </div>
               <div class="form-group">
-                <label for="exampleInputFile">Foto Banner *</label>
+                <label>Status Tukar</label>
+                <select class="form-control" name='trade_status'>
+                  <option value='1'>Active</option>
+                  <option value='0'>Inactive</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Thumbnail Banner *</label>
                 <div class="input-group">
                   <div class="custom-file">
                     <input type="file" class="custom-file-input" name="image" id="image" required>
                     <label class="custom-file-label" for="image">Choose file</label>
                   </div>
                 </div>
-                <p style="font-size:12px; color:blue;">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 2</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image2" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 3</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image3" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Foto Banner 4</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="image4" id="image">
+                    <label class="custom-file-label" for="image">Choose file</label>
+                  </div>
+                </div>
+              </div>
+
+              <p style="font-size:12px; color:blue;">
                   ukurang maksimal 2mb
                   <br />
                   dengan format jpg/png
                   <br />
                   dengan ukuran 440px X 440px
                 </p>
-              </div>
             </div>
             <!-- /.card-body -->
 

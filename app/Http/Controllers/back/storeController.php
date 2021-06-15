@@ -28,6 +28,8 @@ class storeController extends Controller
     $storeObj->store_text_buy = $request->textBuy;
     $storeObj->store_text_trade = $request->textTrade;
     $storeObj->store_bank_account = $request->rekening;
+    $storeObj->store_bank_account = $request->rekening;
+    // $storeObj->trade_status = $request->trade_status;
     $storeObj->save();
     
     return redirect('/panel/store')->with('success', 'Store was updated!');

@@ -18,10 +18,14 @@ class CreateProductsTable extends Migration
             $table->string('product_code')->nullable();
             $table->string('product_name');
             $table->string('product_img')->nullable();
+            $table->string('product_img2')->nullable();
+            $table->string('product_img3')->nullable();
+            $table->string('product_img4')->nullable();
             $table->bigInteger('product_price');
             $table->text('product_description')->nullable();
             $table->date('product_store')->nullable(); //produk masuk
             $table->date('product_exp')->nullable(); //kadaluarsa
+            $table->date('product_trade_status')->nullable();
             $table->unsignedBigInteger('categories_id');
             $table->timestamps();
         });

@@ -74,12 +74,12 @@ Edit Store
                 <label for="phone">Phone</label>
                 <input type="text" class="form-control" name="phone" placeholder="judul kategori" value="{{$store->store_phone}}">
               </div>
-              
+
               <div class="form-group">
                 <label for="phone">Address</label>
                 <textarea class="form-control" rows="3" name="address" placeholder="address">{{$store->store_address}}</textarea>
               </div>
-              
+
               <div class="form-group">
                 <label for="phone">About Us</label>
                 <textarea class="form-control" rows="3" name="about" placeholder="">{{$store->store_about}}</textarea>
@@ -94,6 +94,14 @@ Edit Store
                 <label for="phone">Text Tukar</label>
                 <input type="text" class="form-control" name="textTrade" placeholder="" value="{{$store->store_text_trade}}">
               </div>
+
+              <!-- <div class="form-group">
+                <label>Status Tukar</label>
+                <select class="form-control" name='trade_status'>
+                  <option value='0' @if($store->trade_status == 0)  selected @endif>Inactive</option>
+                  <option value='1'  @if($store->trade_status == 1)  selected @endif>Active</option>
+                </select>
+              </div> -->
 
               <div class="form-group">
                 <label for="phone">Rekening Bank</label>
